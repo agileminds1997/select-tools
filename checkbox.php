@@ -4,23 +4,20 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Memory of Checkboxes</title>
-        <meta name="description" content="This is a way to limit how many checkboxes can be selected. A radio button becomes a special case of checkbox, with follow limit =1.The first selected checkbox is unclicked as the limit is reached">
+        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
 
         <link rel="manifest" href="site.webmanifest">
-        <!-- Place favicon.ico in the root directory -->
-
-<!--         <link rel="stylesheet" href="/css/normalize.css"> -->
-        <link rel="stylesheet" href="/css/erik.css">
+        <link rel="stylesheet" href="css/eric.css">
     </head>
     <body>
 
-        <?php include __DIR__."../ejc/navigation.html"; 
-        $rdf = 1; //rand(1,10);
+        <?php 
+        $rdf = rand(1,10);
         ?>
 
         <!--[if lte IE 9]>
@@ -28,33 +25,11 @@
         <![endif]-->
 
         <div class="super">
-	        <!-- Add your site or application content here -->
 	        <h1>CheckBox Follow</h1>
-			<fieldset class="snakeTail">
-				<h2>Limit follow selections</h2>
-                <h3>This is a way to limit how many checkboxes can be selected. A radio button becomes a special case of checkbox, with follow limit =1.The first selected checkbox is unclicked as the limit is reached.</h3>
 
-                <div class="beatb">
-                    <form class="range">
-                        <div class="form-group range__slider">
-                          <input type="range" step="1">
-                        </div>
-                        <div class="form-group range__value">
-                          <label>Max</label>
-                          <span></span>            
-                        </div>
-                      </form>
-                </div>
- 
-<!-- 
-		        <input type="radio" name="limit" value="1" checked>1
-		        <input type="radio" name="limit" value="2">2
-		        <input type="radio" name="limit" value="3">3
-                <input type="radio" name="limit" value="4">4
-                <input type="radio" name="limit" value="5">5
-                <input type="radio" name="limit" value="6">6
-                <br>
- -->
+			<fieldset id="snakeTail">
+				<h2>Limit how many selections</h2>
+
                 <form class="range">
                 <div class="form-group">
                     <input id="limiter" type="range" min="1" max="10" step="1" value="<?=$rdf?>">
@@ -90,11 +65,11 @@
 			</fieldset>
 		</div>
 
-        <script src="/js/modernizr.js"></script>
+        <script src="js/modernizr.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="/js/erik.js"></script>
+        <script src="js/eric.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <!-- Google Analytics -->
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
