@@ -1,0 +1,142 @@
+html{
+    font-size:20px;
+  }
+
+.content {
+  width:100%;
+  max-width: 414px;
+}
+div {
+  color: #ED2839;
+}
+select {
+  font-style: bolder; 
+  font-size: 3em;
+  width:100%;
+}
+  #results2,#results1,#results3 {
+  width:100%;
+  border: 1px solid black;
+  margin: 1px;
+  border-radius: 5px
+  box-shadow: 3px;
+  line-height: 0.6rem;
+  min-height: 0.8rem;
+  font-size: 0.5rem;
+  background-color: coral;
+  color: black;
+}
+  #results2::before,#results1::before,#results3::before{
+ content: ">> ";
+}
+#box {
+  width:100%;
+  height:10rem;
+  border: 1px solid black; 
+  padding: 9px 0 0 2px;
+  font-size: 1rem;
+  font-family: Lato, Roboto, Arial;
+  line-height: 0.8em;
+}
+#boxes {
+  width:100%;
+  height:16rem;
+  border: 1px solid black; 
+  padding: 9px 0 0 2px;
+  font-size: 1rem;
+  font-family: Lato, Roboto, Arial;
+  line-height: 0.8em;
+}
+div.container>span:nth-of-type(odd) {
+background: #e0e0e0;
+}
+
+div.container>div:nth-of-type(odd) {
+  background: #d0d0d0;
+  line-height: 1rem;
+}
+#box4{
+  line-height: 0.7rem;
+}
+#box4 .e
+{
+    width:90px;
+    border-right:1px solid #222;
+    text-align:center;
+    float:left;
+    padding-left:2px;
+    cursor:pointer;
+}
+
+#box4 div.container>div:hover {
+    background-color:red;
+}
+.selecta {
+  line-height: 0.6rem;
+}
+
+.bollscro input {
+width:100%
+}
+.main {
+  display: block;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+h1 {
+  color: orange;
+}
+/* Hiding the initial checkbox */
+.arr input[type=checkbox] {
+  visibility: hidden;
+}
+/* Creating a custom checkbox based on demand */
+.w3docs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: black;
+}
+/* Specify the background color to be shown when hovering over checkbox */
+.main:hover input ~ .w3docs {
+  background-color: gray;
+}
+/* Specify the background color to be shown when checkbox is active */
+.main input:active ~ .w3docs {
+  background-color: white;
+}
+/* Specify the background color to be shown when checkbox is checked */
+.main input:checked ~ .w3docs {
+  background-color: orange;
+}
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.w3docs:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Display checkmark when checked */
+.main input:checked ~ .w3docs:after {
+  display: block;
+}
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and 
+showing only two border to make it look
+like a tickmark */
+.main .w3docs:after {
+  left: 8px;
+  bottom: 5px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

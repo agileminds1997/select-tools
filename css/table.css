@@ -1,0 +1,42 @@
+table {
+	width: 50%;
+	border:1px solid black;
+	margin: 1px;
+	padding: 2px;
+}
+
+td, th {
+	padding: 1px 2px 1px 2px;
+	border: 1px solid black;
+}
+
+#output table tr td,
+#output table th, 
+#output tr, 
+#output td {
+	padding:5px;
+	border:1px solid black;
+	margin:20px;
+}
+
+th {
+	border:2px solid red;
+}
+
+#red {
+    color: #f00;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.5em;
+}
+
+#green  {
+    color: #0f0;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.5em;
+}
+
+#blue {
+	color:#00f;
+	text-shadow: 2px 1px 1px 1px #ccc;
+    font-size: 1.5em;
+}
